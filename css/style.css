@@ -347,11 +347,11 @@ body {
           color: #2A2A2A;
           font-size: 14pt;
           line-height: 0; }
-        #about > .wrap > .row1 .text p {
-          font-family: "RobotoRegular", sans-serif;
-          color: #909090;
+        #about > .wrap > .row1 .text small {
+          font-family: "RobotoRegular";
+          color: #A4A4A4;
           font-size: 10pt;
-          line-height: 19px; }
+          font-weight: 400; }
       #about > .wrap > .row1 .img {
         flex-basis: 310px;
         height: 300px;
@@ -378,11 +378,11 @@ body {
           color: #2A2A2A;
           font-size: 14pt;
           line-height: 0; }
-        #about > .wrap > .row2 .text p {
-          font-family: "RobotoRegular", sans-serif;
-          color: #909090;
+        #about > .wrap > .row2 .text small {
+          font-family: "RobotoRegular";
+          color: #A4A4A4;
           font-size: 10pt;
-          line-height: 19px; }
+          font-weight: 400; }
       #about > .wrap > .row2 .img {
         flex-basis: 250px;
         height: 300px;
@@ -409,11 +409,11 @@ body {
           color: #2A2A2A;
           font-size: 14pt;
           line-height: 0; }
-        #about > .wrap > .row3 .text p {
-          font-family: "RobotoRegular", sans-serif;
-          color: #909090;
+        #about > .wrap > .row3 .text small {
+          font-family: "RobotoRegular";
+          color: #A4A4A4;
           font-size: 10pt;
-          line-height: 19px; }
+          font-weight: 400; }
       #about > .wrap > .row3 .img {
         flex-basis: 310px;
         height: 300px;
@@ -441,11 +441,11 @@ body {
           color: #2A2A2A;
           font-size: 14pt;
           line-height: 0; }
-        #about > .wrap > .row4 .text p {
-          font-family: "RobotoRegular", sans-serif;
-          color: #909090;
+        #about > .wrap > .row4 .text small {
+          font-family: "RobotoRegular";
+          color: #A4A4A4;
           font-size: 10pt;
-          line-height: 19px; }
+          font-weight: 400; }
       #about > .wrap > .row4 .img {
         flex-basis: 250px;
         height: 300px;
