@@ -5,7 +5,11 @@ html, body {
 	min-height: 100%;
 }
 
-html {
+body {
+	overflow-x: hidden;
+}
+
+.main-wrapper {
 	overflow-x: hidden;
 }
 

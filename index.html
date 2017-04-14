@@ -14,6 +14,8 @@
 	</head>
 	<body>
 
+	<div class="main-wrapper">
+
 		<div id="hellopreloader">
 			<div id="hellopreloader_preload"></div>
 		</div>
@@ -68,23 +70,39 @@
 				<h1>Services</h1>
 				<h3>Proin iaculis purus consequat sem cure.</h3>
 
-				<ul class="fadeInUp wow">
-					<li>
-						<img src="img/Commerce.png" alt="Commerce">
-						<h2>E-Commerce</h2>
-						<h4>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</h4>
-					</li>
-					<li>
-						<img src="img/Responsive.png" alt="Responsive">
-						<h2>Responsive Web</h2>
-						<h4>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</h4>
-					</li>
-					<li>
-						<img src="img/Security.png" alt="Security">
-						<h2>Web Security</h2>
-						<h4>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</h4>
-					</li>
-				</ul>
+				<div class="services-items">
+
+					<div class="services-item  fadeInUp wow">
+						<div class="ico1"></div>
+						<h2>
+							E-Commerce
+						</h2>
+						<small>
+							Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+						</small>
+					</div>
+
+					<div class="services-item  fadeInUp wow">
+						<div class="ico2"></div>
+						<h2>
+							Responsive Web
+						</h2>
+						<small>
+							Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+						</small>
+					</div>
+
+					<div class="services-item  fadeInUp wow">
+						<div class="ico3"></div>
+						<h2>
+							Web Security
+						</h2>
+						<small>
+							Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+						</small>
+					</div>
+
+				</div>
 
 			</div>
 
@@ -323,13 +341,15 @@
 			$(document).ready(function() {
 				$("#top").on("click","form", function (event) {
 					event.preventDefault();
-					var id  = $(this).attr('action'),
+					var id = $(this).attr('action'),
 						top = $(id).offset().top;
 					$('body,html').animate({scrollTop: top-120}, 700);
 				});
 			});
 		</script>
 		<!-- end -->
+
+		</div>
 
 	</body>
 </html>

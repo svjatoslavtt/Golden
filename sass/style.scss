@@ -224,6 +224,7 @@ $DarkGrey: #222222;
 				transition: all 0.1s ease;
 				position: absolute;
 				margin-top: 20px;
+				overflow: hidden;
 			}
 
 			li {
@@ -279,8 +280,6 @@ $DarkGrey: #222222;
 
 	&>.wrap {
 		text-align: center;
-		justify-content: center;
-		flex-wrap: wrap;
 
 		h1 {
 			margin-top: 120px;
@@ -299,17 +298,41 @@ $DarkGrey: #222222;
 			line-height: 0px;
 		}
 
-		&>ul {
-			@extend %ul, %flex;
-			margin-top: 80px;
-			flex-wrap: wrap;
+		.services-items {
+			@extend %flex;
+			flex-direction: wrap;
 			justify-content: center;
+			margin-top: 55px;
 
-			li {
+			.services-item {
+				@extend %flex;
+				flex-direction: column;
+				justify-content: center;
 				flex-basis: 250px;
 				flex-grow: 0.5;
 				box-sizing: border-box;
 				padding: 25px;
+
+				.ico1 {
+					align-self: center;
+					background: url('../img/Commerce.png') no-repeat;
+					width: 80px;
+					height: 80px;
+				}
+
+				.ico2 {
+					align-self: center;
+					background: url('../img/Responsive.png') no-repeat;
+					width: 80px;
+					height: 80px;
+				}
+
+				.ico3 {
+					align-self: center;
+					background: url('../img/Security.png') no-repeat;
+					width: 80px;
+					height: 80px;
+				}
 
 				h2 {
 					font-family: $Montserrat-bold, sans-serif;
@@ -317,7 +340,7 @@ $DarkGrey: #222222;
 					font-size: 15pt;
 				}
 
-				h4 {
+				small {
 					font-family: $Roboto;
 					color: #A4A4A4;
 					font-size: 10pt;
@@ -758,14 +781,14 @@ $DarkGrey: #222222;
 
 		ul {
 			@extend %flex, %ul;
-			justify-content: space-around;
+			justify-content: center;
 			flex-wrap: wrap;
 			align-items: center;
 			min-height: 130px;
 			max-width: 1000px;
 
 			li {
-				flex-basis: 200px;
+				margin: 15px 20px;
 			}
 
 			.item1 {

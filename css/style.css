@@ -36,14 +36,17 @@ html, body {
   height: 100%;
   min-height: 100%; }
 
-html {
+body {
   overflow-x: hidden; }
 
-#services > .wrap > ul, #portfolio > .wrap > ul, #team > .wrap > ul, #team > .wrap > ul li .social, #logos > .wrap ul, #contact > .wrap > .send, #footer > .wrap, #footer > .wrap footer, #footer > .wrap footer ul {
+.main-wrapper {
+  overflow-x: hidden; }
+
+#services > .wrap .services-items, #services > .wrap .services-items .services-item, #portfolio > .wrap > ul, #team > .wrap > ul, #team > .wrap > ul li .social, #logos > .wrap ul, #contact > .wrap > .send, #footer > .wrap, #footer > .wrap footer, #footer > .wrap footer ul {
   display: flex;
   flex-wrap: wrap; }
 
-#services > .wrap > ul, #portfolio > .wrap > ul, #team > .wrap > ul, #team > .wrap > ul li .social, #logos > .wrap ul, #footer > .wrap footer ul {
+#portfolio > .wrap > ul, #team > .wrap > ul, #team > .wrap > ul li .social, #logos > .wrap ul, #footer > .wrap footer ul {
   list-style: none;
   padding: 0;
   margin: 0; }
@@ -162,7 +165,8 @@ html {
       visibility: hidden;
       transition: all 0.1s ease;
       position: absolute;
-      margin-top: 20px; }
+      margin-top: 20px;
+      overflow: hidden; }
     #top nav li {
       border-bottom: 1px dotted #fff;
       display: block;
@@ -197,9 +201,7 @@ html {
 #services {
   position: relative; }
   #services > .wrap {
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap; }
+    text-align: center; }
     #services > .wrap h1 {
       margin-top: 120px;
       font-family: "MontserratBold", sans-serif;
@@ -213,20 +215,37 @@ html {
       font-size: 11pt;
       font-weight: 400;
       line-height: 0px; }
-    #services > .wrap > ul {
-      margin-top: 80px;
-      flex-wrap: wrap;
-      justify-content: center; }
-      #services > .wrap > ul li {
+    #services > .wrap .services-items {
+      flex-direction: wrap;
+      justify-content: center;
+      margin-top: 55px; }
+      #services > .wrap .services-items .services-item {
+        flex-direction: column;
+        justify-content: center;
         flex-basis: 250px;
         flex-grow: 0.5;
         box-sizing: border-box;
         padding: 25px; }
-        #services > .wrap > ul li h2 {
+        #services > .wrap .services-items .services-item .ico1 {
+          align-self: center;
+          background: url("../img/Commerce.png") no-repeat;
+          width: 80px;
+          height: 80px; }
+        #services > .wrap .services-items .services-item .ico2 {
+          align-self: center;
+          background: url("../img/Responsive.png") no-repeat;
+          width: 80px;
+          height: 80px; }
+        #services > .wrap .services-items .services-item .ico3 {
+          align-self: center;
+          background: url("../img/Security.png") no-repeat;
+          width: 80px;
+          height: 80px; }
+        #services > .wrap .services-items .services-item h2 {
           font-family: "MontserratBold", sans-serif;
           color: #222222;
           font-size: 15pt; }
-        #services > .wrap > ul li h4 {
+        #services > .wrap .services-items .services-item small {
           font-family: "RobotoRegular";
           color: #A4A4A4;
           font-size: 10pt;
@@ -535,35 +554,15 @@ html {
   position: relative;
   min-height: 130px; }
   #logos > .wrap {
-    padding-bottom: -10px;
-    /*&>ul {
-			@extend %ul, %flex;
-			margin-top: 70px;
-			justify-content: center;
-			flex-wrap: wrap;
-
-			li {
-				flex-basis: 200px;
-				margin-left: 40px;
-				cursor: pointer;
-			}
-
-			li:nth-child(2) {
-				margin-left: 0px;
-			}
-			
-			li:nth-child(4) {
-				margin-left: 0px;
-			}
-		}*/ }
+    padding-bottom: -10px; }
     #logos > .wrap ul {
-      justify-content: space-around;
+      justify-content: center;
       flex-wrap: wrap;
       align-items: center;
       min-height: 130px;
       max-width: 1000px; }
       #logos > .wrap ul li {
-        flex-basis: 200px; }
+        margin: 15px 20px; }
       #logos > .wrap ul .item1 {
         background: url("../img/logos-image1.png") no-repeat;
         height: 50px;
