@@ -131,6 +131,14 @@
 
 @media screen and (max-width: 521px) {
 
+	body {
+
+		#toTop {
+			right: 30px;
+			bottom: 20px;
+		}
+	}
+
 	#about {
 
 		&>.wrap {

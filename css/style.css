@@ -42,7 +42,7 @@ body {
 .main-wrapper {
   overflow-x: hidden; }
 
-#services > .wrap .services-items, #services > .wrap .services-items .services-item, #portfolio > .wrap > ul, #team > .wrap > ul, #team > .wrap > ul li .social, #logos > .wrap ul, #contact > .wrap > .send, #footer > .wrap, #footer > .wrap footer, #footer > .wrap footer ul {
+body #toTop i, #services > .wrap .services-items, #services > .wrap .services-items .services-item, #portfolio > .wrap > ul, #team > .wrap > ul, #team > .wrap > ul li .social, #logos > .wrap ul, #contact > .wrap > .send, #footer > .wrap, #footer > .wrap footer, #footer > .wrap footer ul {
   display: flex;
   flex-wrap: wrap; }
 
@@ -75,6 +75,26 @@ body {
   background: #222222 url(http://hello-site.ru//main/images/preloads/puff.svg) center center/cover;
   background-repeat: no-repeat;
   background-size: 41px; }
+
+/*------ scroll-toTop ------*/
+body #toTop {
+  position: fixed;
+  display: none;
+  z-index: 10;
+  right: 70px;
+  bottom: 50px;
+  height: 45px;
+  width: 45px;
+  background-color: #fed136;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid white;
+  font-size: 20px; }
+  body #toTop i {
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    color: #fff; }
 
 /*------ end ------*/
 #top {
@@ -762,6 +782,9 @@ body {
       margin-left: 0; } }
 
 @media screen and (max-width: 521px) {
+  body #toTop {
+    right: 30px;
+    bottom: 20px; }
   #about > .wrap > .row1 {
     flex-direction: column; }
     #about > .wrap > .row1 .img {

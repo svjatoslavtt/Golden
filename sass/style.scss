@@ -95,9 +95,36 @@ $DarkGrey: #222222;
 	background-size:41px;
 }
 
+/*------ scroll-toTop ------*/
+
+body {
+
+	#toTop {
+		position: fixed;
+		display: none;
+		z-index: 10;
+		right: 70px;
+		bottom: 50px;
+		height: 45px;
+		width: 45px;
+		background-color: $Gold;
+		border-radius: 50%;
+		cursor: pointer;
+		border: 1px solid lighten($Gold, 40%);
+		font-size: 20px;
+
+		i {
+			@extend %flex;
+			justify-content: center;
+			position: relative;
+			top: 10px;
+			color: #fff;
+		}
+	}
+}
+
 /*------ end ------*/
 
- 
 #top {
 	position: relative;
 	height: 100vh;
